@@ -12,8 +12,8 @@ import Combine
 
 enum ModelCategory: CaseIterable {
     case table
-    case chair
-    case decor
+    case shoes
+    case cups
     case light
     
     var label: String{
@@ -21,10 +21,10 @@ enum ModelCategory: CaseIterable {
             switch self {
             case .table:
                 return "Tables"
-            case .chair:
-                return "Chairs"
-            case .decor:
-                return "Decor"
+            case .shoes:
+                return "Shoes"
+            case .cups:
+                return "Cups"
             case .light:
                 return "Lights"
            }
@@ -62,14 +62,19 @@ struct Models {
         
         self.all += [diningTable, familyTable]
         
-        //Chairs
-        let diningChair = Model(name: "obj_1", category: .chair, scaleCompensation: 0.32/100)
-        let familyChair = Model(name: "obj_2", category: .chair, scaleCompensation: 0.32/100)
+        //Shoes
+        let sneekerShoes = Model(name: "obj_3", category: .shoes, scaleCompensation: 0.32/100)
+        let sportShoes = Model(name: "obj_4", category: .shoes, scaleCompensation: 0.32/100)
         
-        self.all += [diningChair, familyChair]
+        self.all += [sneekerShoes, sportShoes]
         
        
-        //Decors..
+        //Cups
+        let cupNormal = Model(name: "obj_5", category: .cups, scaleCompensation: 0.32/100)
+        let mugCup = Model(name: "obj_6", category: .cups, scaleCompensation: 0.32/100)
+        
+        self.all += [cupNormal, mugCup]
+        
         //Lights..
     }
     

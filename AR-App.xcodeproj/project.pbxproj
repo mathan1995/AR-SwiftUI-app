@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BF8971BA2675FDE1006D8380 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8971B92675FDE1006D8380 /* BrowseView.swift */; };
 		BF8971BC26760392006D8380 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8971BB26760392006D8380 /* Modal.swift */; };
+		BF8971BF267650BB006D8380 /* obj_3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BF8971BD267650BB006D8380 /* obj_3.usdz */; };
+		BF8971C0267650BB006D8380 /* obj_4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BF8971BE267650BB006D8380 /* obj_4.usdz */; };
+		BF8971C3267651CC006D8380 /* obj_5.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BF8971C1267651CC006D8380 /* obj_5.usdz */; };
+		BF8971C4267651CC006D8380 /* obj_6.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BF8971C2267651CC006D8380 /* obj_6.usdz */; };
 		BFE713C4267496CF00C9F357 /* AR_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE713C3267496CF00C9F357 /* AR_AppApp.swift */; };
 		BFE713C6267496CF00C9F357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE713C5267496CF00C9F357 /* ContentView.swift */; };
 		BFE713C8267496D100C9F357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE713C7267496D100C9F357 /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 /* Begin PBXFileReference section */
 		BF8971B92675FDE1006D8380 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		BF8971BB26760392006D8380 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		BF8971BD267650BB006D8380 /* obj_3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = obj_3.usdz; path = ../../../../Downloads/obj_3.usdz; sourceTree = "<group>"; };
+		BF8971BE267650BB006D8380 /* obj_4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = obj_4.usdz; path = ../../../../Downloads/obj_4.usdz; sourceTree = "<group>"; };
+		BF8971C1267651CC006D8380 /* obj_5.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = obj_5.usdz; path = ../../../../Downloads/obj_5.usdz; sourceTree = "<group>"; };
+		BF8971C2267651CC006D8380 /* obj_6.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = obj_6.usdz; path = ../../../../Downloads/obj_6.usdz; sourceTree = "<group>"; };
 		BFE713C0267496CF00C9F357 /* AR-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE713C3267496CF00C9F357 /* AR_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_AppApp.swift; sourceTree = "<group>"; };
 		BFE713C5267496CF00C9F357 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +157,10 @@
 			children = (
 				BFE714272674CCC600C9F357 /* obj_1.usdz */,
 				BFE714282674CCC600C9F357 /* obj_2.usdz */,
+				BF8971BD267650BB006D8380 /* obj_3.usdz */,
+				BF8971BE267650BB006D8380 /* obj_4.usdz */,
+				BF8971C1267651CC006D8380 /* obj_5.usdz */,
+				BF8971C2267651CC006D8380 /* obj_6.usdz */,
 			);
 			path = "3D Assets";
 			sourceTree = "<group>";
@@ -256,10 +268,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8971C3267651CC006D8380 /* obj_5.usdz in Resources */,
+				BF8971C0267650BB006D8380 /* obj_4.usdz in Resources */,
 				BFE714292674CCC600C9F357 /* obj_1.usdz in Resources */,
 				BFE713CB267496D100C9F357 /* Preview Assets.xcassets in Resources */,
 				BFE7142A2674CCC600C9F357 /* obj_2.usdz in Resources */,
 				BFE713C8267496D100C9F357 /* Assets.xcassets in Resources */,
+				BF8971C4267651CC006D8380 /* obj_6.usdz in Resources */,
+				BF8971BF267650BB006D8380 /* obj_3.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

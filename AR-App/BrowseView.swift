@@ -44,7 +44,7 @@ struct HorizontalGrid: View {
     @Binding var showBrowse : Bool
     var title : String
     var items : [Model]
-    private let gridItemLayout = [GridItem(.fixed(50))]
+    private let gridItemLayout = [GridItem(.fixed(150))]
     var body: some View{
         
         VStack(alignment: .leading){
