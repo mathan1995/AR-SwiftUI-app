@@ -103,11 +103,11 @@
 			children = (
 				BFE713C3267496CF00C9F357 /* AR_AppApp.swift */,
 				BFE713C5267496CF00C9F357 /* ContentView.swift */,
+				BFE7142E2674CEAF00C9F357 /* ControlView.swift */,
 				BFE713C7267496D100C9F357 /* Assets.xcassets */,
 				BFE713CC267496D100C9F357 /* Info.plist */,
 				BFE714262674CC8B00C9F357 /* 3D Assets */,
 				BFE713C9267496D100C9F357 /* Preview Content */,
-				BFE7142E2674CEAF00C9F357 /* ControlView.swift */,
 			);
 			path = "AR-App";
 			sourceTree = "<group>";

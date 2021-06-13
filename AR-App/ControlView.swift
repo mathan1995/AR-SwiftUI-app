@@ -7,21 +7,22 @@
 
 import SwiftUI
 
-struct ControlView:View {
+struct ControlView: View {
     @Binding var isControlsVisible : Bool
+    @Binding var showBrowse :Bool
     var body: some View{
         VStack{
             ControlVisibilityToggleButton(isControlsVisible : $isControlsVisible)
             Spacer()
            
             if isControlsVisible{
-                ControlButtonBar()
+                ControlButtonBar(showBrowse: $showBrowse)
             }
         }
     }
 }
 
-struct ControlVisibilityToggleButton:View {
+struct ControlVisibilityToggleButton: View {
     @Binding var isControlsVisible : Bool
     var body: some View{
         HStack
@@ -46,49 +47,48 @@ struct ControlVisibilityToggleButton:View {
     }
 }
 
-struct ControlButtonBar:View {
+struct ControlButtonBar: View {
+    @Binding var showBrowse : Bool
+    
     var body: some View{
-        HStack
-        {
-         
-            // Button 1
+        HStack {
             
+            //Most Recently played button
             ControlButton(systemIconName: "clock.fill") {
                 print("MostRecentlyPlacedbutton pressed")
             }
             
             Spacer()
             
-            // Button 2
-            
+            //Browse Button
             ControlButton(systemIconName: "square.grid.2x2") {
-                print("Button is pressed")
-            }
-            
-           
-            
+                
+                self.showBrowse.toggle()
+            }.sheet(isPresented: $showBrowse, content: {
+                //Browse View 
+            })
+
             Spacer()
-            
-            
-            // Button 3
-            
+
+            //Setting Button
             ControlButton(systemIconName: "slider.horizontal.3") {
                 print("Setting Button is pressed")
             }
           
             
         }
-        .frame(maxWidth:500)
+        .frame(maxWidth: 500)
         .padding(30)
-        .background(Color.black)
-        .opacity(0.25)
+        .background(Color.black.opacity(0.25))
+        
     }
 }
 
 
-struct ControlButton:View {
-    let systemIconName : String
-    let action : () -> Void
+struct ControlButton: View {
+    let systemIconName: String
+    let action: () -> Void
+    
     var body: some View{
         Button(action: {
             self.action()
@@ -98,6 +98,6 @@ struct ControlButton:View {
                 .foregroundColor(.white)
                 .buttonStyle(PlainButtonStyle())
         }
-        .frame(width: 50, height: 50, alignment: .center)
+        .frame(width: 50, height: 50)
     }
 }
