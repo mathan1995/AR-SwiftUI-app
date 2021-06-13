@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		BF8971C8267653AA006D8380 /* obj_8.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BF8971C6267653AA006D8380 /* obj_8.usdz */; };
 		BF8971CA26765CAF006D8380 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8971C926765CAF006D8380 /* PlacementSettings.swift */; };
 		BF8971CC26766043006D8380 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8971CB26766043006D8380 /* PlacementView.swift */; };
+		BF8971CF26766A05006D8380 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = BF8971CE26766A05006D8380 /* FocusEntity */; };
+		BF8971D126766A3C006D8380 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8971D026766A3C006D8380 /* CustomARView.swift */; };
 		BFE713C4267496CF00C9F357 /* AR_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE713C3267496CF00C9F357 /* AR_AppApp.swift */; };
 		BFE713C6267496CF00C9F357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE713C5267496CF00C9F357 /* ContentView.swift */; };
 		BFE713C8267496D100C9F357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE713C7267496D100C9F357 /* Assets.xcassets */; };
@@ -56,6 +58,7 @@
 		BF8971C6267653AA006D8380 /* obj_8.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = obj_8.usdz; path = ../../../../Downloads/obj_8.usdz; sourceTree = "<group>"; };
 		BF8971C926765CAF006D8380 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		BF8971CB26766043006D8380 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		BF8971D026766A3C006D8380 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		BFE713C0267496CF00C9F357 /* AR-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE713C3267496CF00C9F357 /* AR_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_AppApp.swift; sourceTree = "<group>"; };
 		BFE713C5267496CF00C9F357 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8971CF26766A05006D8380 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +127,7 @@
 			children = (
 				BFE713C3267496CF00C9F357 /* AR_AppApp.swift */,
 				BFE713C5267496CF00C9F357 /* ContentView.swift */,
+				BF8971D026766A3C006D8380 /* CustomARView.swift */,
 				BFE7142E2674CEAF00C9F357 /* ControlView.swift */,
 				BF8971B92675FDE1006D8380 /* BrowseView.swift */,
 				BF8971CB26766043006D8380 /* PlacementView.swift */,
@@ -193,6 +198,9 @@
 			dependencies = (
 			);
 			name = "AR-App";
+			packageProductDependencies = (
+				BF8971CE26766A05006D8380 /* FocusEntity */,
+			);
 			productName = "AR-App";
 			productReference = BFE713C0267496CF00C9F357 /* AR-App.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +272,9 @@
 				Base,
 			);
 			mainGroup = BFE713B7267496CF00C9F357;
+			packageReferences = (
+				BF8971CD26766A05006D8380 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = BFE713C1267496CF00C9F357 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,6 +331,7 @@
 				BFE713C6267496CF00C9F357 /* ContentView.swift in Sources */,
 				BFE7142F2674CEAF00C9F357 /* ControlView.swift in Sources */,
 				BFE713C4267496CF00C9F357 /* AR_AppApp.swift in Sources */,
+				BF8971D126766A3C006D8380 /* CustomARView.swift in Sources */,
 				BF8971CC26766043006D8380 /* PlacementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,6 +652,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF8971CD26766A05006D8380 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF8971CE26766A05006D8380 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF8971CD26766A05006D8380 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFE713B8267496CF00C9F357 /* Project object */;
 }

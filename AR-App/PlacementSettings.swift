@@ -27,4 +27,6 @@ class PlacementSettings: ObservableObject{
             print("Setting confirmedModel \(model.name)")
         }
     }
+    //This property return the cancellable object for our SceneEvents.Update subscriber
+    var sceneObserver:Cancellable?
 }
