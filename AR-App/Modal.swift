@@ -14,7 +14,7 @@ enum ModelCategory: CaseIterable {
     case table
     case shoes
     case cups
-    case light
+    case others
     
     var label: String{
         get{
@@ -25,8 +25,8 @@ enum ModelCategory: CaseIterable {
                 return "Shoes"
             case .cups:
                 return "Cups"
-            case .light:
-                return "Lights"
+            case .others:
+                return "Others"
            }
         }
     }
@@ -75,7 +75,11 @@ struct Models {
         
         self.all += [cupNormal, mugCup]
         
-        //Lights..
+        //Others
+        let guittar = Model(name: "obj_7", category: .others, scaleCompensation: 0.32/100)
+        let flowerVas = Model(name: "obj_8", category: .others, scaleCompensation: 0.32/100)
+        
+        self.all += [guittar, flowerVas]
     }
     
     func get(category: ModelCategory) -> [Model] {
