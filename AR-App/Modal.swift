@@ -40,6 +40,8 @@ class Model {
         var thumbnail: UIImage
         var modelEntity: ModelEntity?
         var scaleCompensation: Float
+    
+    private var cancellable : AnyCancellable?
         
         init(name:String ,category:ModelCategory, scaleCompensation: Float = 1.0){
             self.name = name
@@ -49,7 +51,27 @@ class Model {
             
             
         }
-     //TODO create a method to async load modalEntity
+    //Async Load mOdel Entity
+    func asyncLoadModelEntity(){
+        let filename = self.name + ".usdz"
+        self.cancellable = ModelEntity.loadModelAsync(named: filename)
+            .sink(receiveCompletion: {loadCompletion in
+                switch loadCompletion {
+                case .failure(let error): print("Unable to load model entity for \(filename).Error: \(error.localizedDescription)")
+                case.finished:
+                break
+                }
+                
+            },receiveValue: {modelEntity in
+                
+                self.modelEntity = modelEntity
+                self.modelEntity?.scale *= self.scaleCompensation
+                
+                print("modelEntity for \(self.name) has been loaded.")
+            })
+        
+        
+    }
 }
 
 struct Models {
