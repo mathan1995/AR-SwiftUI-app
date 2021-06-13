@@ -41,6 +41,7 @@ struct ModelsByCategoryGrid: View {
 }
 
 struct HorizontalGrid: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse : Bool
     var title : String
     var items : [Model]
@@ -61,7 +62,7 @@ struct HorizontalGrid: View {
                       let model = items[index]
                         ItemButton(model: model){
                             model.asyncLoadModelEntity()
-                            //TODO: select model for placement
+                            self.placementSettings.selectedModel = model
                             print("BrowseView : selected \(model.name) for placeholder")
                             self.showBrowse = false
                         }

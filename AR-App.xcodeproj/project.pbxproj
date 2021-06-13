@@ -15,6 +15,8 @@
 		BF8971C4267651CC006D8380 /* obj_6.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BF8971C2267651CC006D8380 /* obj_6.usdz */; };
 		BF8971C7267653AA006D8380 /* obj_7.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BF8971C5267653AA006D8380 /* obj_7.usdz */; };
 		BF8971C8267653AA006D8380 /* obj_8.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BF8971C6267653AA006D8380 /* obj_8.usdz */; };
+		BF8971CA26765CAF006D8380 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8971C926765CAF006D8380 /* PlacementSettings.swift */; };
+		BF8971CC26766043006D8380 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8971CB26766043006D8380 /* PlacementView.swift */; };
 		BFE713C4267496CF00C9F357 /* AR_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE713C3267496CF00C9F357 /* AR_AppApp.swift */; };
 		BFE713C6267496CF00C9F357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE713C5267496CF00C9F357 /* ContentView.swift */; };
 		BFE713C8267496D100C9F357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE713C7267496D100C9F357 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		BF8971C2267651CC006D8380 /* obj_6.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = obj_6.usdz; path = ../../../../Downloads/obj_6.usdz; sourceTree = "<group>"; };
 		BF8971C5267653AA006D8380 /* obj_7.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = obj_7.usdz; path = ../../../../Downloads/obj_7.usdz; sourceTree = "<group>"; };
 		BF8971C6267653AA006D8380 /* obj_8.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = obj_8.usdz; path = ../../../../Downloads/obj_8.usdz; sourceTree = "<group>"; };
+		BF8971C926765CAF006D8380 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
+		BF8971CB26766043006D8380 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		BFE713C0267496CF00C9F357 /* AR-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE713C3267496CF00C9F357 /* AR_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_AppApp.swift; sourceTree = "<group>"; };
 		BFE713C5267496CF00C9F357 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				BFE713C5267496CF00C9F357 /* ContentView.swift */,
 				BFE7142E2674CEAF00C9F357 /* ControlView.swift */,
 				BF8971B92675FDE1006D8380 /* BrowseView.swift */,
+				BF8971CB26766043006D8380 /* PlacementView.swift */,
+				BF8971C926765CAF006D8380 /* PlacementSettings.swift */,
 				BF8971BB26760392006D8380 /* Modal.swift */,
 				BFE713C7267496D100C9F357 /* Assets.xcassets */,
 				BFE713CC267496D100C9F357 /* Info.plist */,
@@ -308,11 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8971CA26765CAF006D8380 /* PlacementSettings.swift in Sources */,
 				BF8971BA2675FDE1006D8380 /* BrowseView.swift in Sources */,
 				BF8971BC26760392006D8380 /* Modal.swift in Sources */,
 				BFE713C6267496CF00C9F357 /* ContentView.swift in Sources */,
 				BFE7142F2674CEAF00C9F357 /* ControlView.swift in Sources */,
 				BFE713C4267496CF00C9F357 /* AR_AppApp.swift in Sources */,
+				BF8971CC26766043006D8380 /* PlacementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
