@@ -79,27 +79,27 @@ struct Models {
     
     init(){
         //Table
-        let diningTable = Model(name: "obj_1", category: .table, scaleCompensation: 0.32/100)
-        let familyTable = Model(name: "obj_2", category: .table, scaleCompensation: 0.32/100)
+        let diningTable = Model(name: "obj_1", category: .table, scaleCompensation: 0.5)
+        let familyTable = Model(name: "obj_2", category: .table, scaleCompensation: 0.5)
         
         self.all += [diningTable, familyTable]
         
         //Shoes
-        let sneekerShoes = Model(name: "obj_3", category: .shoes, scaleCompensation: 0.32/100)
-        let sportShoes = Model(name: "obj_4", category: .shoes, scaleCompensation: 0.32/100)
+        let sneekerShoes = Model(name: "obj_3", category: .shoes, scaleCompensation: 0.5)
+        let sportShoes = Model(name: "obj_4", category: .shoes, scaleCompensation: 0.5)
         
         self.all += [sneekerShoes, sportShoes]
         
        
         //Cups
-        let cupNormal = Model(name: "obj_5", category: .cups, scaleCompensation: 0.32/100)
-        let mugCup = Model(name: "obj_6", category: .cups, scaleCompensation: 0.32/100)
+        let cupNormal = Model(name: "obj_5", category: .cups, scaleCompensation: 0.5)
+        let mugCup = Model(name: "obj_6", category: .cups, scaleCompensation: 0.5)
         
         self.all += [cupNormal, mugCup]
         
         //Others
-        let guittar = Model(name: "obj_7", category: .others, scaleCompensation: 0.32/100)
-        let flowerVas = Model(name: "obj_8", category: .others, scaleCompensation: 0.32/100)
+        let guittar = Model(name: "obj_7", category: .others, scaleCompensation: 0.5)
+        let flowerVas = Model(name: "obj_8", category: .others, scaleCompensation: 0.5)
         
         self.all += [guittar, flowerVas]
     }
